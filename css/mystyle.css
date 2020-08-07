@@ -1,0 +1,234 @@
+.logoCon{
+    margin-left: 10em;
+}
+
+ header.masthead .masthead-heading {
+    font-size: 3.5rem;
+}
+
+.btn-social {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+.footerCon{
+    background: ;
+    padding: 2em;
+    height: 5em;
+}
+
+
+section {
+    padding: 0.5em;
+    margin: 0.1em;
+}
+
+section #contact {
+  background-color: #273a4dad;
+  
+}
+
+
+.aboutMeContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75%;
+    width: 90%;
+    margin: auto;    
+}
+
+/*scroll effect start*/
+.aboutBody{
+    width: 50%;
+    text-align: center;
+    opacity: 0;
+    transform:  translateX(110px);
+    transition: 0.9s all ease-in-out;  
+     
+}        
+
+.aboutEffect{
+    opacity: 1;
+    transform:  translateX(0px);
+}
+
+/*scroll effect end*/
+
+
+
+.aboutMeContent img{
+    width: 350px;
+    height: 500px;
+    border-radius: 10%;
+    padding: 35px;
+}
+
+.h2Con{
+    color: #fed266;
+
+}
+
+.h4Con{
+    display: flex;
+    justify-content: center
+}
+h4{
+    border-bottom: 3px #fed266 solid;
+    width: 25%; 
+}
+
+/*My work section*/
+
+#work{
+    background: background: #212529;
+    display: grid;
+    
+    
+}
+
+/*footer*/
+.footer{
+    padding: 12px 0px;
+    font-size: 1em;
+}
+
+.footerOne{
+    background: #212526;
+}
+
+
+.footerCon{
+    color: whitesmoke;
+}
+
+/*typing effect*/
+
+
+.typing {
+     position: relative;
+    margin-left: 10px;
+    
+}
+/*the typing effect*/
+.typing::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-right: white 4px solid;
+    animation: blink 0.9s infinite ease;
+    
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.description{
+    list-style: circle
+}
+
+
+.main-timeline4 .title {
+    font-size: 1em;
+}
+
+/*Anitmation effect*/
+
+
+
+.aboutMeContent img {
+    transition: transform .5s; /* Animation */
+   padding: 2px;   
+}
+
+.aboutMeContent img:hover{
+    transform: scale(1.1);
+}
+
+.zoom{
+  transition: transform .5s; /* Animation */
+   padding: 2px;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+/*Media Query */
+@media only screen and(max-width:480px){
+.aboutMeContent img  {
+    width: 150px;
+    height: 380px;
+    border-radius: 10%;
+    padding: 15px;
+}
+    
+    
+.mySkill {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+}
+
+@media only screen and (max-width: 768px) {
+ 
+    .mySkill{
+        width: 100%;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    
+      header.masthead .masthead-heading {
+    font-size: 2.0rem;
+}
+    
+    header.masthead .masthead-subheading{
+    font-size: 1.7rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 0em;
+        }
+    .logoCon {
+        margin-left: 1em;  
+}
+}
+
+@media only screen and (max-width: 990px) {
+ .aboutMeContent img
+   {
+    width: 250px;
+    height: 400px;
+    border-radius: 10%;
+    padding: 15px;
+}
+    .aboutMeContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    height: 75%;
+    width: 100%;
+    margin: auto;    
+    }
+    .aboutBody{
+   font-size: 0.9em;
+        width: 90%
+}
