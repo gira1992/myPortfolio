@@ -54,8 +54,8 @@ section #contact {
     margin: auto;    
 }
 
-.aboutMeContent img{
-   
+.cvBtn{
+    margin-top: 30px
 }
 
 /*scroll effect start*/
@@ -131,6 +131,7 @@ h4{
     
 }
 /*the typing effect*/
+/*
 .typing::after{
     content: "";
     position: absolute;
@@ -140,6 +141,7 @@ h4{
     animation: blink 0.9s infinite ease;
     
 }
+*/
 
 @keyframes blink {
     0%{
@@ -200,17 +202,32 @@ h4{
     flex-wrap: wrap;
 }
     
+      
+    .projectFlow img{
+    
+        object-fit: contain
+    }
+    
 }
 
 @media only screen and (max-width: 768px) {
  
-    .mySkill{
+    .mySkill {
         width: 100%;
         padding-right: 0.75rem;
         padding-left: 0.75rem;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
+    
+    .skillsFlow{
+    display: flex !important;
+    width: 100%;
+    flex-flow: wrap;
+    justify-content: space-around;
+    }
+    
 }
 
 @media only screen and (max-width: 990px){
@@ -238,19 +255,34 @@ h4{
     border-radius: 10%;
     padding: 15px;
 }
-    .aboutMeContent {
+    .aboutMeContent  {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: column;
     height: 75%;
     width: 100%;
-    margin: auto;    
+    margin: auto; 
     }
+    
     .aboutBody{
    font-size: 0.9em;
         width: 90%
 }
+    .projectFlow  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    height: 75%;
+    width: 100%;
+    margin: auto; 
+    }
+    
+    .projectFlow img{
+        margin-top: 15px;
+        object-fit: contain
+    }
 }
     
     
