@@ -2,8 +2,23 @@
     margin-left: 10em;
 }
 
- header.masthead .masthead-heading {
-    font-size: 3.5rem;
+ .header.masthead .masthead-heading {
+    font-size: 2.5rem;
+}
+
+body{
+    background-image: url(../assets/img/back.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contentBack {
+    background: rgba(255,255,255,0.7);
+    
+    box-shadow: 2px 3px 3px 2px
+        
 }
 
 .btn-social {
@@ -39,6 +54,10 @@ section #contact {
     margin: auto;    
 }
 
+.cvBtn{
+    margin-top: 30px
+}
+
 /*scroll effect start*/
 .aboutBody{
     width: 50%;
@@ -46,7 +65,7 @@ section #contact {
     opacity: 0;
     transform:  translateX(110px);
     transition: 0.9s all ease-in-out;  
-     
+     font-family: 'EB Garamond', serif;
 }        
 
 .aboutEffect{
@@ -185,13 +204,16 @@ h4{
 
 @media only screen and (max-width: 768px) {
  
-    .mySkill{
+    .mySkill {
         width: 100%;
         padding-right: 0.75rem;
         padding-left: 0.75rem;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
+    
+    
 }
 
 @media only screen and (max-width: 990px){
@@ -237,6 +259,14 @@ h4{
     
     
     .img-fluid {
-    max-width: 160px;
-    height: 120px;
+    width: 100%;
+    height: 200px;
+        border-radius: 20px 0 20px 0
+}
+
+.skillsFlow{
+    display: flex !important;
+    width: 100%;
+    justify-content: space-around
+        
 }
