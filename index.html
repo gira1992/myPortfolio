@@ -59,21 +59,23 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
+                <div class="masthead-subheading"> Hello, I'm</div>
+                <div class="masthead-heading text-uppercase typing">  </div>
                 <div class="masthead-subheading">Front-End Developer</div>
                 
-                <div class="masthead-heading text-uppercase typing">  </div>
+                
                 
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="assets/cv/myCV_justin_gira.pdf" style="text-decoration: underline" download>View My CV</a>
             </div>
         </header>
                 <!-- About-->
         <section class="page-section" id="about">
-            <div class="container">
+            <div class="container contentBack">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase" style="color: #fed266; background: #212529">About Me</h2>
-<!--                    <h3 class="section-subheading text-muted">All about me!</h3>-->
+
                     <div class="aboutMeContent" >
-                <img src="assets/img/me.jpg" alt="Justin Gira">
+                <img src="assets/img/me.jpg" class="picOfMe" alt="Justin Gira" style="object-fit:contain;  border-radius: 50%">
 
 
                 <p class="aboutBody"> My name is Justin Gira I'm 28 years old Front-End Developer based in London. I was born in Philippines and raised in London. I would describe myself as a passionate developer who is keen on improving and adapting my skills <span><i class="fas fa-code"></i></span>. <br>
@@ -96,7 +98,7 @@
                      
                     <h2 class="section-heading text-uppercase" style="color: #fed266; background: #212529">Experience</h2>
                 </div>
-            <div class="row">
+            <div class="row contentBack">
                 <div class="col-md-12">
                     <div class="main-timeline4">
                         <div class="timeline">
@@ -171,56 +173,49 @@
                     <h2 class="section-heading text-uppercase" style="color: #fed266; background: #212529">Skills</h2>
                 </div>
 <!--                    tech Skills-->
+               <div class ="contentBack">
                 <div class="h4Con text-center container">
                     <h4> Tech Skills</h4>
                 </div>
                 
                 <div class="row text-center">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <span class="fa-stack fa-4x">
+                    <div class="row-lg-4 row-md-4 row-sm-4 skillsFlow">
+                        <div class="extra">
+                        <span class="fa-stack fa-3x">
                             <i class="fab fa-html5"></i>
                         </span>
                         <h6 class="my-3">HTML5</h6>
-                        
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <span class="fa-stack fa-4x">
+                        </div>
+                    
+                        <div class="extra">
+                        <span class="fa-stack fa-3x">
                           <i class="fab fa-js-square"></i>
                         </span>
                         <h6 class="my-3">JavaScript</h6>
-                        
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <span class="fa-stack fa-4x">
+                        </div>
+                    
+                    <div class="extra">
+                        <span class="fa-stack fa-3x">
                             <i class="fab fa-css3-alt"></i>
                         </span>
                         <h6 class="my-3">CSS3</h6>
-                        
-                    </div>
+                        </div>
                     
-<!--
-                    <div class="col-lg-6 col-md-4 col-sm-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fab fa-react"></i>
-                        </span>
-                        <h6 class="my-3">React</h6>
-                        
-                    </div>
--->
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <span class="fa-stack fa-4x">
+                    <div class="extra">
+                        <span class="fa-stack fa-3x">
                          <i class="fab fa-bootstrap"></i>
                         </span>
                         <h6 class="my-3">Bootstrap</h6>
-                        
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <span class="fa-stack fa-4x">
+                        </div>
+                            
+                   <div class="extra">
+                        <span class="fa-stack fa-3x">
                             <img src="https://img.icons8.com/ios-filled/50/000000/c-sharp-logo.png"/>
                         </span>
                         <h6 class="my-3">C#</h6>
-                        
+                        </div>
                     </div>
+
                 </div>
                 <hr>
 <!--                soft skills -->
@@ -261,7 +256,7 @@
                         
                     </div>
                 </div>
-                
+                </div>
             </div>
         </section>
         <!-- Portfolio Grid-->
@@ -270,10 +265,11 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase" style="color: #fed266; background: #212529">Projects</h2>
                 </div>
-                <div class="row" style="margin-top: 40px">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="row skillsFlow" style="margin-top: 40px">
+                    <div class="skillsFlow contentBack">
                         <div class="portfolio-item">
-                            <a href="https://gira1992.github.io/project-one/" target="_blank">
+                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+<!--                            <a href="https://gira1992.github.io/project-one/" target="_blank">-->
 <!--                            <a class="portfolio-link" data-toggle="modal" href="https://gira1992.github.io/project-one/" target="_blank>-->
                                 <div class="portfolio-hover">
                                     
@@ -281,12 +277,12 @@
                                 <img class="img-fluid" src="assets/project1.png" width="100%" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading" style="color: #fed266; text-align: center" ><a href="https://gira1992.github.io/project-one/" target="_blank">GoCanada</a></div>
+                                <div class="portfolio-caption-heading" style="color: #fed266; text-align: center" ><a href="https://gira1992.github.io/project-one/" target="_blank" style="color: darkgoldenrod; font-weight: 800; font-size: 20px ">GoCanada</a></div>
 <!--                                <div class="portfolio-caption-subheading text-muted">Need a Break</div>-->
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    
+                    
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
@@ -295,21 +291,23 @@
                                 <img class="img-fluid" src="assets/project2.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading" style ="color: #fed266">FashionNova</div>
+                                <div class="portfolio-caption-heading" style ="color: #fed266">
+                                    <a href="https://gira1992.github.io/e-com/" target="_blank" style="color: darkgoldenrod; font-weight: 800; font-size: 20px ">FashionNova</a></div>
 <!--                                <div class="portfolio-caption-subheading text-muted">Test Your knowledge</div>-->
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    
+                    
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/weather.png" width="150px" alt="" />
+                                <img class="img-fluid" src="assets/project3.png" width="150px" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading" style="color: #fed266">Weather App</div>
+                                <div class="portfolio-caption-heading" style="color: #fed266">
+                                    <a href="https://gira1992.github.io/weatherApp/" target="_blank" style="color: darkgoldenrod; font-weight: 800; font-size: 20px ">Weather App</a></div>
                                 
                             </div>
                         </div>
@@ -404,32 +402,11 @@
             
             
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-<!--
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>San Francisco, CA 94126, USA</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 01 234 567 89</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@mdbootstrap.com</p>
-                </li>
-            </ul>
-        </div>
--->
-        <!--Grid column-->
+   
 
     </div>
 
-<!--</section>-->
-<!--Section: Contact v.2-->
+
                 </div>
             </div>
         </section>
@@ -459,7 +436,7 @@
         <!-- Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content"  style="background: rgba(90, 81, 68, 100)">
                     <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
@@ -468,9 +445,10 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">GoCanada</h2>
                                     <p class="item-intro text-muted">Explore The Best Part of North America</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="project one" style="height: 250px" />
-                                    <p>This project is about travelling around Canada and exploring for yorself the best parts, the most recommended places, accomdates for all ages, fun activites for everyone <br>
-                                    Check my <a href="PROJECTONE/index.html"> Website</a>
+                                    <img class="img-fluid d-block mx-auto" src="assets/project1.png" alt="project one" style="height: 250px" />
+                                    <p> Tech Used:HTML/CSS/JavaScript/BootStrap    <br>        
+                                     This project is about travelling around Canada and exploring for yorself the best parts, the most recommended places, accomdates for all ages, fun activites for everyone <br>
+                                    Check my <a href="PROJECTONE/index.html">DEMO Website</a>
                                     </p>
                                     <ul class="list-inline">
                                         <li>Date: August 2020</li>
@@ -491,21 +469,25 @@
         <!-- Modal 2-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content"  style="background: rgba(90, 81, 68, 100)">
                     <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
-                                <div class="modal-body">
+                                <div class="modal-body" style="background: rgba(90, 81, 68, 100)">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">FashionNova</h2>
+                                    <p class="item-intro text-muted">E-Com Website</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/project2.png" alt="" />
+                                    <p> Tech Used: HTML/CSS/JavaScript
+                                        <br>
+                                        Created a E-com website which allows the user to add products to add to cart, delete and sum up the total.
+                                        Check my <a href="https://gira1992.github.io/e-com/">DEMO Website</a>
+                                        
+                                        </p>
                                     <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Explore</li>
-                                        <li>Category: Graphic Design</li>
+                                        <li>Date: August 2020</li>
+                                       
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
@@ -520,22 +502,26 @@
         </div>
         <!-- Modal 3-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
+            <div class="modal-dialog" >
+                <div class="modal-content"  style="background: rgba(90, 81, 68, 100)">
                     <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
+                    <div class="container" >
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">Weather App</h2>
+                                    <p class="item-intro text-muted"> Check the Current Weather </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/project3.png" alt="" />
+                                    <p> Tech Used: HTML/CSS/JavaScript
+                                        <br>
+                                        Created a weather app using API allowing the user to type in a city or country
+                                        and to find out the temp, weather description and hi and low temp of the day.
+                                        <br> Check My <a href="https://gira1992.github.io/weatherApp/"> Weather App</a>
+                                        </p>
                                     <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Identity</li>
+                                        <li>Date: September 2020</li>
+                                        
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
