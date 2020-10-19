@@ -200,6 +200,12 @@ h4{
     flex-wrap: wrap;
 }
     
+      
+    .projectFlow img{
+    
+        object-fit: contain
+    }
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -241,19 +247,34 @@ h4{
     border-radius: 10%;
     padding: 15px;
 }
-    .aboutMeContent {
+    .aboutMeContent  {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: column;
     height: 75%;
     width: 100%;
-    margin: auto;    
+    margin: auto; 
     }
+    
     .aboutBody{
    font-size: 0.9em;
         width: 90%
 }
+    .projectFlow  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    height: 75%;
+    width: 100%;
+    margin: auto; 
+    }
+    
+    .projectFlow img{
+        margin-top: 15px;
+        object-fit: contain
+    }
 }
     
     
