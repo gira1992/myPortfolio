@@ -1,38 +1,26 @@
-.logoCon{
-    margin-left: 10em;
-}
-
- .header.masthead .masthead-heading {
-    font-size: 2.5rem;
-}
-
 body{
     background-image: url(../assets/img/back.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-position: center;
+}
+
+video{
+    object-fit: contain;
+    width: 100%;
+}
+
+.masthead{
+    
 }
 
 .contentBack {
     background: rgba(255,255,255,0.7);
-    
-    box-shadow: 2px 3px 3px 2px
-        
+    box-shadow: 2px 3px 3px 2px;
+    padding-top: 0.5em;
 }
-
-.btn-social {
-    height: 2rem;
-    width: 2rem;
-}
-
-
-.footerCon{
-    background: ;
-    padding: 2em;
-    height: 5em;
-}
-
 
 section {
     padding: 0.5em;
@@ -40,11 +28,57 @@ section {
 }
 
 section #contact {
-  background-color: #273a4dad;
-  
+  background-color: #273a4dad; 
 }
 
+.h2Con{
+    color: #fed266;
 
+}
+.h4Con{
+    display: flex;
+    justify-content: center
+}
+h4{
+    border-bottom: 3px #fed266 solid;
+    width: 25%; 
+}
+
+/**********************NAV SECTION******************/
+
+.zoom{
+    transition: transform .5s; /* Animation */
+     padding: 1px;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  
+/**********************HEADING SECTION******************/
+.logoCon{
+    margin-left: 10em;
+}
+
+.sub-heading{
+    color: #fed266;
+    background: #212529;
+}
+
+/**********************ABOUT SECTION******************/
+  
+.aboutMeContent img{
+    width: 350px;
+    height: 500px;
+    /* border-radius: ; */
+    padding: 35px;
+    margin-bottom: 30px;
+}
+
+.about-me-img{
+    border: #fed266 1px solid;
+    padding: 0;
+}
 .aboutMeContent {
     display: flex;
     justify-content: space-around;
@@ -55,17 +89,48 @@ section #contact {
 }
 
 .cvBtn{
-    margin-top: 30px
+    display: block;
+    width: 50%;
+    margin:50px auto 0 auto ;
 }
+
+.cvBtn:hover{
+    background-color: ;
+    color: #273a4dad;;
+}
+
+
+/**********************TIMELINE SECTION******************/
+
+thead{
+  font-size: 1em;
+    background-color: #fed3669f;
+}
+
+
+tr{
+    border-bottom: none;
+    border-top: none;
+}
+
+.description{
+    list-style: circle
+}
+
+
+.main-timeline4 .title {
+    font-size: 1em;
+}
+
 
 /*scroll effect start*/
 .aboutBody{
     width: 50%;
     text-align: center;
     opacity: 0;
-    transform:  translateX(110px);
+    transform:  translateY(110px);
     transition: 0.9s all ease-in-out;  
-     font-family: 'EB Garamond', serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }        
 
 .aboutEffect{
@@ -75,52 +140,85 @@ section #contact {
 
 /*scroll effect end*/
 
+/**********************PROJECT SECTION******************/
 
-
-.aboutMeContent img{
-    width: 350px;
-    height: 500px;
-    border-radius: 10%;
-    padding: 35px;
+.projectFlow{
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0);
+    margin-bottom: 20px;
+    display: flex !important;
+    width: 100%;
+    justify-content: space-around
 }
 
-.h2Con{
-    color: #fed266;
-
+.project-title{
+    color: darkgoldenrod;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgba(27, 25, 25, 0.075);
+    width: 100%;
+    display: block;
 }
 
-.h4Con{
-    display: flex;
-    justify-content: center
-}
-h4{
-    border-bottom: 3px #fed266 solid;
-    width: 25%; 
+
+
+/**********************FORM SECTION******************/
+.form-container{
+    padding-bottom: 22px;
 }
 
-/*My work section*/
-
-#work{
-    background: background: #212529;
-    display: grid;
-    
-    
+.formCon{
+    background-color: #212529af;
+    margin: 22px auto;
 }
 
-/*footer*/
-.footer{
-    padding: 12px 0px;
+/**********************MODAL SECTION******************/
+.modal-content{
+    background-color: #2125296c ;
+    color: #fff;
+}
+
+.modal-body{
+    background-color: rgba(184, 135, 11, 0.747);
+}
+
+.modal-body h2{
+    color: #212529;
+}
+
+.item-intro{
+    color: rgb(49, 38, 9);
+    font-weight: bold;
     font-size: 1.2em;
 }
 
-.footerOne{
-    background: #212526;
-}
 
+
+/**********************FOOTER SECTION******************/
+.footer{
+    font-size: 1em;
+    background-color: #212529;
+}
 
 .footerCon{
     color: whitesmoke;
+    padding: 2em;
+    height: 5em;
 }
+
+
+.btn-social {
+    height: 2rem;
+    width: 2rem;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 200px;
+        border-radius: 20px 0 20px 0
+}
+
+
 
 /*typing effect*/
 
@@ -143,109 +241,18 @@ h4{
 }
 */
 
-@keyframes blink {
+/* @keyframes blink {
     0%{
         opacity: 0;
     }
     100% {
         opacity: 1;
     }
-}
-
-.description{
-    list-style: circle
-}
-
-
-.main-timeline4 .title {
-    font-size: 1em;
-}
-
-/*Anitmation effect*/
+} */
 
 
 
-.aboutMeContent img {
-    transition: transform .5s; /* Animation */
-   padding: 2px;   
-}
-
-.aboutMeContent img:hover{
-    transform: scale(1.1);
-}
-
-.zoom{
-  transition: transform .5s; /* Animation */
-   padding: 2px;
-}
-
-.zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-
-/*Media Query */
-@media only screen and(max-width:480px){
-.aboutMeContent img  {
-    width: 150px;
-    height: 380px;
-    border-radius: 10%;
-    padding: 15px;
-}
-    
-    
-.mySkill {
-    width: 100%;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-    
-      
-    .projectFlow img{
-    
-        object-fit: contain
-    }
-    
-}
-
-@media only screen and (max-width: 768px) {
- 
-    .mySkill {
-        width: 100%;
-        padding-right: 0.75rem;
-        padding-left: 0.75rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .skillsFlow{
-    display: flex !important;
-    width: 100%;
-    flex-flow: wrap;
-    justify-content: space-around;
-    }
-    
-}
-
-@media only screen and (max-width: 990px){
-    
-      header.masthead .masthead-heading {
-    font-size: 2.0rem;
-}
-    
-    header.masthead .masthead-subheading{
-    font-size: 1.7rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 0em;
-        }
-    .logoCon {
-        margin-left: 1em;  
-}
-}
+/**********************MEDIA QUERY SECTION******************/
 
 @media only screen and (max-width: 990px) {
  .aboutMeContent img
@@ -254,7 +261,22 @@ h4{
     height: 400px;
     border-radius: 10%;
     padding: 15px;
-}
+    }
+    
+.masthead-heading {
+    font-size: 3rem;
+    }
+    
+header.masthead .masthead-subheading{
+    font-size: 1.7rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 0em;
+      }
+    .logoCon {
+        margin-left: 1em;  
+    }
+
     .aboutMeContent  {
     display: flex;
     justify-content: space-around;
@@ -268,7 +290,7 @@ h4{
     .aboutBody{
    font-size: 0.9em;
         width: 90%
-}
+    }
     .projectFlow  {
     display: flex;
     justify-content: space-around;
@@ -278,24 +300,54 @@ h4{
     width: 100%;
     margin: auto; 
     }
+    .project-title{
+        width: 50%;
+        margin: 0 auto;
+    }
     
     .projectFlow img{
         margin-top: 15px;
         object-fit: contain
     }
 }
-    
-    
-    
-    .img-fluid {
-    width: 100%;
-    height: 200px;
-        border-radius: 20px 0 20px 0
-}
 
-.skillsFlow{
+@media only screen and (max-width: 768px) {
+ 
+    /* .mySkill {
+        width: 100%;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
+    /* .projectFlow{
     display: flex !important;
     width: 100%;
-    justify-content: space-around
-        
+    flex-flow: wrap;
+    justify-content: space-around;
+    } */
 }
+
+@media only screen and (max-width:480px){
+    /* .aboutMeContent img  {
+    width: 150px;
+    height: 380px;
+    border-radius: 10%;
+    padding: 15px;
+    }  */
+    /* .mySkill {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    }  */
+    /* .projectFlow img{
+        object-fit: contain;
+    } */
+    
+}
+    
+
+  

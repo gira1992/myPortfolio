@@ -3,14 +3,14 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
     */
-    (function ($) {
+(function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
             location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
+            this.pathname.replace(/^\//, "") &&
             location.hostname == this.hostname
         ) {
             var target = $(this.hash);
@@ -59,15 +59,15 @@
 //scroll effect
 
 
-function scrollEffect(){
+function scrollEffect() {
     var aboutContent = document.querySelector('.aboutBody');
     var aboutPosition = aboutContent.getBoundingClientRect().top;
-    var screenPosition = window.innerHeight/1.8;
-    
-    if(aboutPosition < screenPosition){
+    var screenPosition = window.innerHeight / 1.8;
+
+    if (aboutPosition < screenPosition) {
         aboutContent.classList.add('aboutEffect');
     }
-    
+
 }
 
 
@@ -79,24 +79,24 @@ window.addEventListener('scroll', scrollEffect);
 const text = ["<>Justin Gira</>"];
 let count = 0;
 let index = 0;
-let currentText='';
+let currentText = '';
 let letter = '';
 
-(function type(){
-    
-    if (count === text.length){
+(function type() {
+
+    if (count === text.length) {
         count = 0;
     }
-    
+
     currentText = text[count];
     letter = currentText.slice(0, ++index);
-    
+
     document.querySelector('.typing').textContent = letter;
-    if(letter.length === currentText.length){
+    if (letter.length === currentText.length) {
         count++;
         index = 16;
     }
-    
+
     setTimeout(type, 300);
-    
+
 }());
